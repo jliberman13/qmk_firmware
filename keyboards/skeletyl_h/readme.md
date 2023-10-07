@@ -2,11 +2,11 @@
 
 ![skeletyl_h](imgur.com image replace me!)
 
-*A short description of the keyboard/project*
+A handwired, "unibody" version of BastardKB's [Skeletyl](https://github.com/Bastardkb/Skeletyl)
 
-* Keyboard Maintainer: [N/A](https://github.com/jliberman13)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Keyboard Maintainer: [Bastardkb](https://github.com/Bastardkb)
+* Hardware Supported: KB2040, RP2040 ProMicro controllers
+* Hardware Availability: [Adafruit](https://www.adafruit.com/product/5302)
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -22,6 +22,6 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Enter the bootloader in 3 ways:
 
-* **Bootmagic reset**: Hold down the key at (1,2) in the matrix (usually the top left key or Escape) and plug in the keyboard
+* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
 * **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
 * **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available

@@ -1,5 +1,5 @@
 {
-    "manufacturer": "N/A",
+    "manufacturer": "jliberman13",
     "keyboard_name": "skeletyl_h",
     "maintainer": "jliberman13",
     "bootloader": "rp2040",
@@ -24,7 +24,7 @@
         "vid": "0xFEED"
     },
     "layouts": {
-        "LAYOUT_skeletyl-handwire": {
+        "LAYOUT_split_3x5_3": {
             "layout": [
                 { "matrix": [0, 0], "x": 0, "y": 0 },
                 { "matrix": [0, 1], "x": 1, "y": 0 },
@@ -61,7 +61,7 @@
                 { "matrix": [0, 5], "x": 4, "y": 3 },
                 { "matrix": [0, 6], "x": 5, "y": 3 },
                 { "matrix": [1, 6], "x": 6, "y": 3 },
-                { "matrix": [2, 6], "x": 7, "y": 3 },
+                { "matrix": [2, 6], "x": 7, "y": 3 }
             ]
         }
     }
