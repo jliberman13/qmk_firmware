@@ -7,6 +7,32 @@
 
 #include "manna-harbour_miryoku.h"
 
+// Custom keycode macros
+
+enum custom_keycodes {
+	ALT_TAB = SAFE_RANGE,
+	LOCK,
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+	switch (keycode) {
+		case ALT_TAB:
+			if (record->event.pressed) {
+				register_code(KC_LALT);
+				tap_code(KC_TAB);
+				unregister_code(KC_LALT);
+			}
+			break;
+		case LOCK:
+			if (record->event.pressed) {
+				register_code(KC_LGUI);
+				tap_code(KC_L);
+				unregister_code(KC_LGUI);
+			}
+			break;
+	}
+	return true;
+};
 
 // Additional Features double tap guard
 

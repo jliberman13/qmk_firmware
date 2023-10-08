@@ -9,12 +9,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	switch (keycode) {
 		case ALT_TAB:
 			if (record->event.pressed) {
-				SEND_STRING(SS_LALT(X_TAB));
+				register_code(KC_LALT);
+				tap_code(KC_TAB);
+				unregister_code(KC_LALT);
 			}
 			break;
 		case LOCK:
 			if (record->event.pressed) {
-				SEND_STRING(SS_LGUI("l"));
+				register_code(KC_LGUI);
+				tap_code(KC_L);
+				unregister_code(KC_LGUI);
 			}
 			break;
 	}
